@@ -29,3 +29,7 @@ def convert_units(amount, from_unit, to_unit):
         return amount / TIME_UNITS[to_unit][from_unit]
     else:
         raise ValueError(f"Cannot convert from {from_unit} to {to_unit}")
+    
+#calculates population growth using naive model
+def basic_growth(start, rate, steps):
+    return start + (start * rate / 100) * steps
