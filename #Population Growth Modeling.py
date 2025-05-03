@@ -33,3 +33,7 @@ def convert_units(amount, from_unit, to_unit):
 #calculates population growth using naive model
 def basic_growth(start, rate, steps):
     return start + (start * rate / 100) * steps
+
+# calculates population growth using sophisticated model
+def advanced_growth(start, rate, steps):
+    return start * (1 + rate / 100) ** steps
